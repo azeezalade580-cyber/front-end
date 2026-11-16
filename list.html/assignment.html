@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 220px;
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar a {
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+            width: 189px;
+            border-top-right-radius: 8px;
+        }
+        .sidebar a.active {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>vertical side bar menu</h2>
+    <p>the current page is highlighted with a blue background.hover over to see effect</p>
+    <!-- sidebar menu container -->
+    <div class="sidebar">
+    <a href="Dashboard" class="active">dashboard</a>
+    <a href="Services">Services</a>
+    <a href="Project">Project</a>
+    <a href="Team">Team</a>
+    <a href="Contact">Contact</a>
+</div>
+
+</body>
+</html>

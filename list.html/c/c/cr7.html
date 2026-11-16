@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Designo - Award Winning Designs</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Jost',sans-serif;background:#fff;color:#333136;overflow-x:hidden}
+  a{text-decoration:none}
+  .container{width:90%;max-width:1111px;margin:0 auto}
+  /* NAV */
+  nav{display:flex;justify-content:space-between;align-items:center;padding:35px 0}
+  .logo{font-weight:700;font-size:24px;letter-spacing:5px}
+  .logo span{font-weight:400}
+  .nav-links{display:flex;gap:42px;list-style:none}
+  .nav-links a{color:#333136;font-size:14px;letter-spacing:2px;text-transform:uppercase}
+  .nav-links a:hover{text-decoration:underline}
+  /* HERO */
+  .hero{background:#E7816B;border-radius:15px;display:flex;overflow:hidden;padding:0 0 0 95px;height:640px;position:relative;margin-bottom:160px}
+  .hero-text{width:50%;padding-top:145px;z-index:2}
+  .hero-text h1{font-size:48px;line-height:48px;color:#fff;font-weight:500;margin-bottom:24px}
+  .hero-text p{color:#fff;line-height:26px;margin-bottom:40px;width:445px}
+  .btn-light{background:#fff;color:#333136;padding:17px 24px;border-radius:8px;font-weight:500;font-size:15px;letter-spacing:1px;text-transform:uppercase;display:inline-block}
+  .btn-light:hover{background:#FFAD9B;color:#fff}
+  .hero-img{position:absolute;right:-80px;top:0;width:624px}
+  /* GRID */
+  .grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:308px 308px;gap:24px;margin-bottom:160px}
+  .card{border-radius:15px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-transform:uppercase;cursor:pointer}
+  .card::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.5)}
+  .card:hover::after{background:rgba(231,129,107,0.8)}
+  .card h2,.card p{z-index:2}
+  .card h2{font-size:40px;letter-spacing:2px;margin-bottom:12px}
+  .card p{letter-spacing:5px;font-size:15px}
+  .web{grid-row:1 / span 2;background:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f') center/cover}
+  .app{background:url('https://images.unsplash.com/photo-1551650975-87deedd944c3') center/cover}
+  .graphic{background:url('https://images.unsplash.com/photo-1558655146-d09347e92766') center/cover}
+  /* VALUES */
+  .values{display:flex;gap:30px;text-align:center;margin-bottom:160px}
+  .values div img{width:202px;height:202px;border-radius:50%;margin-bottom:48px;background:linear-gradient(90deg,#e7816b20,#e7816b20)}
+  .values h3{font-size:20px;letter-spacing:5px;text-transform:uppercase;margin-bottom:32px}
+  .values p{line-height:26px;font-size:16px}
+  /* CTA */
+  .cta{background:#E7816B;border-radius:15px;display:flex;justify-content:space-between;align-items:center;padding:72px 95px;position:relative;top:72px;z-index:5}
+  .cta h2{color:#fff;font-size:40px;line-height:40px;width:268px;margin-bottom:10px}
+  .cta p{color:#fff;width:459px;line-height:26px}
+  /* FOOTER */
+  footer{background:#1D1C1E;padding:144px 0 72px}
+  .footer-top{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:40px;margin-bottom:40px}
+  .footer-nav{display:flex;gap:42px;list-style:none}
+  .footer-nav a{color:#fff;font-size:14px;letter-spacing:2px;text-transform:uppercase}
+  .footer-bottom{display:flex;justify-content:space-between;color:rgba(255,255,255,0.5);line-height:26px}
+  @media(max-width:900px){
+    .hero{flex-direction:column;height:auto;padding:60px;text-align:center}
+    .hero-text,.hero-img{width:100%;position:static}
+    .hero-text p{width:100%}
+    .grid{grid-template-columns:1fr;grid-template-rows:auto}
+    .web{grid-row:auto;height:250px}
+    .card{height:250px}
+    .values{flex-direction:column}
+    .cta{flex-direction:column;text-align:center;gap:32px}
+    .cta h2,.cta p{width:100%}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav>
+    <div class="logo">● DESIGNO</div>
+    <ul class="nav-links">
+      <li><a href="#">Our Company</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Award-winning custom designs and digital branding solutions</h1>
+      <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
+      <a href="#" class="btn-light">Learn More</a>
+    </div>
+    <img class="hero-img" src="https://i.ibb.co/5c1tK9h/phone.png" alt="phone">
+  </section>
+
+  <section class="grid">
+    <div class="card web"><h2>Web Design</h2><p>View Projects</p></div>
+    <div class="card app"><h2>App Design</h2><p>View Projects</p></div>
+    <div class="card graphic"><h2>Graphic Design</h2><p>View Projects</p></div>
+  </section>
+
+  <section class="values">
+    <div>
+      <img src="https://i.ibb.co/6b0qY1x/passionate.svg" alt="">
+      <h3>Passionate</h3>
+      <p>Each project starts with an in-depth brand research to ensure we only create products that serve a purpose.</p>
+    </div>
+    <div>
+      <img src="https://i.ibb.co/6b0qY1x/passionate.svg" alt="">
+      <h3>Resourceful</h3>
+      <p>Everything that we do has a strategic purpose. We use an agile approach in all of our projects.</p>
+    </div>
+    <div>
+      <img src="https://i.ibb.co/6b0qY1x/passionate.svg" alt="">
+      <h3>Friendly</h3>
+      <p>We are a group of enthusiastic folks who know how to put people first and is a team that does.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div>
+      <h2>Let's talk about your project</h2>
+      <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+    </div>
+    <a href="#" class="btn-light">Get In Touch</a>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div style="color:#fff;font-weight:700;letter-spacing:5px">● DESIGNO</div>
+      <ul class="footer-nav">
+        <li><a href="#">Our Company</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <div>Designo Central Office<br>3886 Wellington Street<br>Toronto, Ontario M9C 3J5</div>
+      <div>Contact Us (Central Office)<br>P : +1 253-863-8967<br>M : contact@designo.co</div>
+      <div>● ● ● ● ●</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+</body>
+</html>

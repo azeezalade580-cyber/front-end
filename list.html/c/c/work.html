@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f5f7;
+        }
+        /* Top Navigation */ .top-nav {
+            background-color: #2b2b2b;
+            color: #ffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 20px;
+            position: relative;
+        }
+        .top-nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .top-nav-links a {
+            color: #ffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 5oo;
+        }
+        .top-nav-links a:hover {
+            text-decoration: underline;
+        }
+        .logout-button {
+            position: absolute;
+            right: 25px;
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        /* main container */ .container {
+            display: flex;
+            flex: 1;
+        }
+        /* sidebars */ .sidebars {
+            width: 180px;
+            background-color: #797979;
+            color: #ffff;
+            padding: 20px 0;
+            flex-shrink: 0;
+        }
+        .sidebars-menu {
+            list-style: none;
+        }
+        .sidebars-menu li a {
+            display: block;
+            padding: 8px 20px;
+            color: #ffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+        }
+        .sidebars-menu li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        /* main content Area */.main-content {
+            flex: 1;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            align-content: start;
+        }
+        /* card component */ .card {
+            background-color: #ffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            width: calc(100%-20px);
+            height: 120px;
+            object-fit: cover;
+            margin: 10px 10px 15px 10px;
+            border-radius: 6px;
+        }
+        .card h3 {
+            font-size: 18px;
+            color: #1111;
+            margin-bottom: 8px;
+        }
+        .card p {
+            font-size: 13px;
+            color: #666;
+            padding: 0 15px;
+        }
+        /* footer */ .footer {
+            background-color: #2b2b2b;
+            color: #ffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 16px 20px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- top navigation bar -->
+     <header class="top-nav">
+        <nav class="top-nav-links">
+            <a href="#Home">Home</a>
+            <a href="#About us">About us</a>
+            <a href="#services">services</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <a href="#class" class="logout-button">logout</a>
+     </header>
+     <div class="container">
+        <!-- left sidebar -->
+         <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#dashboard">dashboard</a></li>
+                <li><a href="#profile">profile</a></li>
+                <li><a href="#messages">messages</a></li>
+                <li><a href="#friends">friends</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="settings">settings</a></li>
+                <li><a href="#help">help</a></li>
+                <li><a href="support">support</a></li>
+            </ul>
+         </aside>
+         <!-- content grid -->
+          <main class="main-content">
+            <div class="card">
+                <img src="" alt="">
+                <h3>nature</h3>
+                <p>beautiful scenery of mountain and rivers.</p>
+             </div>
+             <div class="card">
+                <img src="" alt="">
+                <h3>technology</h3>
+                <p>latest trends in mobile and web apps.</p>
+             </div>
+             <div class="card">
+                <img src="" alt="">
+                <h3>sports</h3>
+                <p>stay updated with football and tennis.</p>
+             </div>
+             <div class="card">
+                <img src="" alt="">
+                <h3>education</h3>
+                <p>learning resources and study guides</p>
+             </div>
+             <div class="card">
+                <img src="" alt="">
+                <h3>health</h3>
+                <p>tips for a healthy and balance lifestyle.</p>
+             </div>
+             <div class="card">
+                <img src="" alt="">
+                <h3>travel</h3>
+                <p>discover amazing destinations worldwide</p>
+             </div>
+          </main>
+          <aside class="sidebar">
+            <ul>
+                <li><a href="notifications">notifications</a></li>
+                <li><a href="calendar">calendar</a></li>
+                <li><a href="tasks">tasks</a></li>
+                <li><a href="events">events</a></li>
+                <li><a href="reports">reports</a></li>
+                <li><a href="analytics">analytics</a></li>
+                <li><a href="faq">faq</a></li>
+                <li><a href="contacts">contact</a></li>
+            </ul>
+          </aside>
+     </div>
+     <footer class="footer">
+        <a href="privacy">privacy</a>
+        <a href="terms of service">terms of service</a>
+        <a href="help center">help center</a>
+        <a href="feedback">feedback</a>
+     </footer>
+</body>
+</html>
