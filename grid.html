@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            width: 800px;
+            background-color: orangered;
+            height: 400px;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+        }
+        .container div{
+            background-color: blue;
+            color: white;
+            border: 1px solid black;
+        }
+        .item1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item7{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">grape</div>
+        <div>tomato</div>
+        <div>apple</div>
+        <div>orange</div>
+        <div>lemon</div>
+        <div>cherry</div>
+        <div>carrot</div>
+        <div class="item7">avocado</div>
+        <div>guava</div>
+        <div>pawpaw</div>
+        <div>plantain</div>
+        <div>cashew</div>
+    </div>
+</div>
+</body>
+</html>
